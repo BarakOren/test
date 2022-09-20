@@ -1,0 +1,41 @@
+.circle-container {
+    min-width: 40px;
+    height: 40px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary-dark-color);
+    border-radius: 25px;
+    position: relative;
+    margin: 0 5px;
+  
+    &__filled {
+      background : var(--primary-base-color);
+      transition: 1s all;
+      transition-delay: 1s;
+    }
+  }
+
+  .number {
+    color: var(--secondery-dark-color);
+    font-size: 14px;
+    &__filled {
+      color: white;
+    }
+  }
+  
+  .title {
+    position: absolute;
+    bottom: -25px;
+    font-size: 16px;
+    color: var(--secondary-dark-color);
+    white-space:nowrap;
+  
+    &__filled {
+      color: black;
+      transition: 1s all;
+      transition-delay: 1s;
+    }
+
+  }

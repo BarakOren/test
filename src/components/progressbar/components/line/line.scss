@@ -1,0 +1,40 @@
+.line-container{
+    width: 30%;
+    background: var(--secondary-dark-color);
+    height: 2px;
+    background-position: right;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+  
+    &:first-child {
+      width: 35%;
+    }
+  
+    &:last-child {
+      width: 35%;
+    }
+  
+    .filled-line {
+      display: none;
+      background: var(--primary-base-color);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+  
+      &__filled {
+        display: block;
+        animation: slideRight 1.5s ease-out;    
+      }
+    }
+  
+  }
+  
+  @keyframes slideRight {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0%
+    }
+  }
